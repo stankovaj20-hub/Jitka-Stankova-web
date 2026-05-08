@@ -1,0 +1,207 @@
+/* =========================
+soubor: style.css
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #01342d;
+    color: white;
+    min-height: 100vh;
+}
+
+/* ===== MENU ===== */
+
+header{
+    width: 100%;
+    padding: 30px 70px;
+	background-color: #6f9f83;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px; 
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #c2ade0;
+}
+
+/* ===== DOMŮ ===== */
+.navbar{
+    color: 
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 250px;
+    min-height: calc(100vh - 100px);
+}
+
+.home-text h1{
+    font-size: 175px;
+    line-height: 0.95;
+    color: #c2ade0;
+    font-weight: 400;
+	
+}
+
+.home-text p{
+    margin-top: 25px;
+    font-size: 35px;
+    color: #c2ade0;
+}
+
+.home-image img{
+    width: 450px;
+    border-radius: 40px;
+    border: 4px solid #c2ade0;
+}
+
+/* ===== O MNĚ ===== */
+
+.about{
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+.about-image img{
+    width: 70%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 40px;
+	border: 4px solid #c2ade0;
+}
+
+.about-image{
+    height:50%;
+	width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 70px;
+}
+
+.about-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.about-text h2{
+    font-size: 70px;
+    color: #c2ade0;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.box{
+    background-color: #6f9f83;
+    width: 400px;
+    padding: 35px;
+    border-radius: 35px;
+    color: #01342d;
+}
+
+.box ul{
+    padding-left: 20px;
+}
+
+.box li{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/* ===== KONTAKT ===== */
+
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.kontakt h2{
+    font-size: 75px;
+    color: #c2ade0;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.kontakt-wrapper{
+    display: flex;
+    gap: 120px;
+    color: #c2ade0;
+    font-size: 24px;
+}
+
+.kontakt-wrapper p{
+    margin-bottom: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width: 900px){
+
+    .home,
+    .about,
+    .kontakt-wrapper{
+        flex-direction: column;
+    }
+
+    .home{
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home-text h1{
+        font-size: 80px;
+    }
+
+    .about{
+        padding-bottom: 50px;
+    }
+
+    .about-image,
+    .about-text{
+        width: 100%;
+    }
+
+    .about-text{
+        align-items: center;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .kontakt-wrapper{
+        gap: 40px;
+    }
+}
